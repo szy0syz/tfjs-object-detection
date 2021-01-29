@@ -89,3 +89,7 @@ const Room = mongoose.model<RoomDoc, RoomModel>('Room', roomSchema)
 export { Room }
 
 ```
+
+- <http://12.234.220.33:8888/mjpg/video.mjpg> 一个滑雪场的24小时实时监控
+- <http://73.238.140.62/mjpg/video.mjpg> 一个海边的24小时实时监控
+- `npm i mjpeg-decoder`
