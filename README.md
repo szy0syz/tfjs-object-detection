@@ -93,3 +93,12 @@ export { Room }
 - <http://12.234.220.33:8888/mjpg/video.mjpg> 一个滑雪场的24小时实时监控
 - <http://73.238.140.62/mjpg/video.mjpg> 一个海边的24小时实时监控
 - `npm i mjpeg-decoder`
+
+```bash
+docker build -t object-detect --build-arg model_url=http://download.tensorflow.org/models/object_detection/ssd_resnet50_v1_fpn_shared_box_predictor_640x640_coco14_sync_2018_07_03.tar.gz .
+
+docker run -p 8080:8080 -p 8081:8081 object-detect
+```
+
+- `npm i image-js numjs @types/numjs`
+- `npm i bull @types/bull dotenv @types/dotenv node-redis-pubsub @types/node-redis-pubsub @types/shelljs shelljs @types/ws ws`
